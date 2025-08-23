@@ -262,10 +262,11 @@ p {
 }
 
 .secao-local p {
-    font-family: 'Optima', sans-serif;
-    color: #FFDDDD;
+   font-family: 'Optima', sans-serif;
+    color: #009cc4;
     background-color: rgba(51,0,0,0.7);
-    padding: 5rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
     line-height: 1.6;
 }
+
