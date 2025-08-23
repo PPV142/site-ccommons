@@ -93,7 +93,7 @@ section {
 }
 
 h1 {
-    text-shadow: -5px 5px var(--alto-contraste-texto);
+    text-shadow: -5px 5px var(--alto-contraste-);
     color: rgb(71, 197, 255); /* h1 azul */
     font-family: 'Montserrat', sans-serif;
 }
@@ -269,4 +269,5 @@ p {
     border-radius: 8px;
     line-height: 1.6;
 }
+
 
