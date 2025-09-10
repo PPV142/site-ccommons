@@ -1,274 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-:root {
-    --vermelho-claro: #FF0000;
-    --vermelho-escuro: #990000;
-    --vermelho-suave: #FF6666;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
-}
-
 /* ================================
-   Estilo geral do site
-================================ */
-body {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('the eminem show.png');
-    background-size: 40px 40px; /* corpo pequeno e repetido */
-    background-position: center;
-    background-repeat: repeat;
-    color: #ffffff;
-    transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-
-header {
-    background-color: #ffffff;
-    padding: 1rem 0;
-}
-
-section {
-    padding-bottom: 5rem;
-}
-
-/* ================================
-   Navegação
-================================ */
-.nav-link {
-    color: var(--vermelho-suave);
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: var(--vermelho-claro);
-}
-
-/* ================================
-   Seção inicial
-================================ */
-.inicio-fundo {
-    background-image: url('the eminem show.png');
-    background-size: 20px 20px; /* imagens pequenas repetidas */
-    background-position: center;
-    background-repeat: repeat;
-    border-radius: 80px;
-    width: 100%;
-    height: 700px;
-    padding: 50px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
-}
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.botao-inicio {
-    background-color: var(--vermelho-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.botao-inicio:hover {
-    background-color: var(--vermelho-escuro);
-}
-
-h1 {
-    text-shadow: -5px 5px var(--alto-contraste-fundo);
-    color: rgb(71, 197, 255); /* h1 azul */
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* ================================
-   Títulos e parágrafos
-================================ */
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    color: var(--vermelho-claro);
-}
-
-p {
-    font-family: 'Optima', sans-serif;
-    color: #009cc4;
-    background-color: rgba(51,0,0,0.7);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    line-height: 1.6;
-}
-
-/* ================================
-   Galeria e contato
-================================ */
-#galeria {
-    background-color: #000000;
-}
-
-.fundo-galeria {
-    background: url('the eminem show.png') bottom right repeat;
-    background-size: 20px 20px;
-}
-
-#contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-}
-
-/* ================================
-   Formulário
-================================ */
-.formulario {
-    background-color: rgba(153,0,0,0.9);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255,0,0,0.5);
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: #ffffff;
-}
-
-.formulario button {
-    background-color: var(--vermelho-claro);
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.formulario button:hover {
-    background-color: var(--vermelho-escuro);
-}
-
-.form-control {
-    background-color: #FFCCCC;
-    padding: 0.5rem;
-    color: #000000;
-}
-
-/* ================================
-   Painel de acessibilidade
-================================ */
-.menu-acessibilidade {
-    position: fixed;
-    top: 2rem;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-}
-
-.rotacao-botao {
-    transform: rotate(-90deg);
-    transform-origin: right center;
-    transition: transform 0.3s ease;
-}
-
-.opcoes-acessibilidade {
-    margin-top: 10px;
-    display: none;
-    flex-direction: column;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.opcoes-acessibilidade button {
-    margin-bottom: 5px;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: 1px solid var(--vermelho-claro);
-    background-color: #ffbb00;
-    color: var(--vermelho-claro);
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.opcoes-acessibilidade button:hover {
-    background-color: var(--vermelho-claro);
-    color: #ffffff;
-}
-
-.apresenta-lista {
-    display: flex !important;
-}
-
-/* ================================
-   Alto contraste (acessibilidade)
+   Alto contraste (aplica em tudo)
 ================================ */
 .alto-contraste {
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+    background-color: var(--alto-contraste-fundo) !important;
+    color: var(--alto-contraste-texto) !important;
+    background-image: none !important;
 }
 
+/* Textos */
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3,
+.alto-contraste h4,
+.alto-contraste h5,
+.alto-contraste h6,
+.alto-contraste p,
+.alto-contraste span,
+.alto-contraste label {
+    color: var(--alto-contraste-texto) !important;
+    background: transparent !important;
+    text-shadow: none !important;
+}
+
+/* Links */
+.alto-contraste a,
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link) !important;
+}
+
+.alto-contraste a:hover,
+.alto-contraste .nav-link:hover {
+    color: var(--alto-contraste-texto) !important;
+}
+
+/* Cabeçalho, rodapé e seções */
 .alto-contraste header,
 .alto-contraste footer,
-.alto-contraste .formulario {
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+.alto-contraste section,
+.alto-contraste #galeria,
+.alto-contraste #contato,
+.alto-contraste .fundo-galeria,
+.alto-contraste .secao-local {
+    background: var(--alto-contraste-fundo) !important;
+    color: var(--alto-contraste-texto) !important;
 }
 
-.alto-contraste .nav-link {
-    color: var(--alto-contraste-link);
-}
-
+/* Botões */
+.alto-contraste button,
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
-.alto-contraste .btn-primary {
-    background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo);
+.alto-contraste .btn-primary,
+.alto-contraste .opcoes-acessibilidade button {
+    background-color: var(--alto-contraste-link) !important;
+    color: var(--alto-contraste-fundo) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
 }
 
-.alto-contraste #eminem,
-.alto-contraste #galeria,
-.alto-contraste .fundo-galeria {
-    background:#000000;
+.alto-contraste button:hover,
+.alto-contraste .botao-inicio:hover,
+.alto-contraste .formulario button:hover,
+.alto-contraste .opcoes-acessibilidade button:hover {
+    background-color: var(--alto-contraste-texto) !important;
+    color: var(--alto-contraste-fundo) !important;
 }
 
-/* ================================
-   Nova seção: Localização
-================================ */
-.secao-local {
-    background-color: rgba(153,0,0,0.8);
-    border-radius: 15px;
-    padding: 2rem;
-    margin-top: 2rem;
-    color: #ffffff;
+/* Formulários */
+.alto-contraste .formulario,
+.alto-contraste .form-control {
+    background: var(--alto-contraste-fundo) !important;
+    color: var(--alto-contraste-texto) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
 }
 
-.secao-local h2 {
-    text-shadow: -5px 5px var(--alto-contraste-texto);
-    font-family: 'Montserrat', serif;
-    font-size: 2.2em;
-    color: rgb(62,0,207); /* título roxo */
+/* Inputs e campos */
+.alto-contraste input,
+.alto-contraste textarea,
+.alto-contraste select {
+    background: var(--alto-contraste-fundo) !important;
+    color: var(--alto-contraste-texto) !important;
+    border: 1px solid var(--alto-contraste-link) !important;
 }
 
-.secao-local p {
-   font-family: 'Optima', sans-serif;
-    color: #009cc4;
-    background-color: rgba(51,0,0,0.7);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    line-height: 1.6;
+/* Remover imagens de fundo para máxima legibilidade */
+.alto-contraste body,
+.alto-contraste header,
+.alto-contraste section,
+.alto-contraste footer {
+    background-image: none !important;
 }
-
-
-
