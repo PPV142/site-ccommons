@@ -196,7 +196,7 @@ p {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     border: 1px solid var(--vermelho-claro);
-    background-color: #ffbb00;
+    background-color: #74edbb;
     color: var(--vermelho-claro);
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -288,4 +288,5 @@ p {
 .alto-contraste .nav-link {
     text-decoration: underline !important;
 }
+
 
