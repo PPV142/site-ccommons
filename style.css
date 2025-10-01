@@ -203,7 +203,7 @@ p {
 }
 
 .opcoes-acessibilidade button:hover {
-    background-color: var(--vermelho-claro);
+    background-color: #74edbb;
     color: #ffffff;
 }
 
@@ -288,3 +288,4 @@ p {
 .alto-contraste .nav-link {
     text-decoration: underline !important;
 }
+
